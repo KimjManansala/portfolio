@@ -1637,3 +1637,29 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+
+/* Skills Section */
+
+.skills{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+}
+.skills-items{
+	margin: 0px 20px;
+	text-align: center;
+	align-content: center;
+}
+
+
+.skills-items > img{
+	height: 40px;
+	width: 40px;
+
+}
+
+.skills-items > h6{
+	font-size: 12px;
+}
