@@ -1,5 +1,3 @@
-
-
 // FOR HOME SLICE
 var siHomeSlice = 1;
 sdHomeSlice(siHomeSlice);
@@ -22,7 +20,6 @@ function sdHomeSlice(n) {
   }
   x[siHomeSlice - 1].style.display = "block";
 }
-
 
 var slBinOrganizer = 1;
 sdBinOrganizer(slBinOrganizer);
@@ -68,19 +65,39 @@ function sdBinOrganizer(n) {
 //   x[slSimpleGame - 1].style.display = "block";
 // }
 
-
 document.addEventListener("DOMContentLoaded", function(event) {
-  console.log(event)
-  // window.open('mailto:test@example.com?subject=subject&body=body')
-})
+  welcomeUser()
+});
 
+document.getElementById("contact-form").addEventListener("submit", e => {
+  e.preventDefault();
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let subject = document.getElementById("subject").value;
+  let message = document.getElementById("message").value;
+  console.log(`kimjmanansala@gmail.com?subject=${subject}t&body=${message}`);
+  window.open(
+    `mailto:kimjmanansala@gmail.com?subject=${subject}&body=${message}`
+  );
+});
 
-document.getElementById('contact-form').addEventListener('submit', e=>{
-  e.preventDefault()
-  let name = document.getElementById('name').value
-  let email = document.getElementById('email').value
-  let subject = document.getElementById('subject').value
-  let message = document.getElementById('message').value
-  console.log(`kimjmanansala@gmail.com?subject=${subject}t&body=${message}`)
-  window.open(`mailto:kimjmanansala@gmail.com?subject=${subject}&body=${message}`)
-})
+function welcomeUser() {
+  // This is an easter egg for Developers that want to open the console!
+  console.log(`
+  ||||        ||||
+  ||||       ||||
+  ||||     ||||
+  ||||    ||||      Welcome Developer
+  ||||   ||||
+  |||| ||||         This is my website
+  ||||||||
+  ||||||||          Contact me at
+  |||| ||||
+  ||||  ||||        kimjmanansala@gmail.com
+  ||||   ||||
+  ||||    ||||
+  ||||     ||||
+  ||||      ||||
+  ||||       ||||
+  ||||        ||||`);
+}
