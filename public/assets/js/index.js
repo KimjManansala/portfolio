@@ -95,9 +95,9 @@ function welcomeUser() {
   |||| ||||
   ||||  ||||        kimjmanansala@gmail.com
   ||||   ||||
-  ||||    ||||
+  ||||    ||||      Check out this Repository at
   ||||     ||||
-  ||||      ||||
+  ||||      ||||    github.com/KimjManansala/portfolio
   ||||       ||||
   ||||        ||||`);
 }
