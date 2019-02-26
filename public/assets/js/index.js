@@ -69,17 +69,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
   welcomeUser()
 });
 
-document.getElementById("contact-form").addEventListener("submit", e => {
-  e.preventDefault();
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let subject = document.getElementById("subject").value;
-  let message = document.getElementById("message").value;
-  console.log(`kimjmanansala@gmail.com?subject=${subject}t&body=${message}`);
-  window.open(
-    `mailto:kimjmanansala@gmail.com?subject=${subject}&body=${message}`
-  );
-});
+// document.getElementById("contact-form").addEventListener("submit", e => {
+//   e.preventDefault();
+//   let name = document.getElementById("name").value;
+//   let email = document.getElementById("email").value;
+//   let subject = document.getElementById("subject").value;
+//   let message = document.getElementById("message").value;
+//   console.log(`kimjmanansala@gmail.com?subject=${subject}t&body=${message}`);
+//   window.open(
+//     `mailto:kimjmanansala@gmail.com?subject=${subject}&body=${message}`
+//   );
+// });
 
 function welcomeUser() {
   // This is an easter egg for Developers that want to open the console!
