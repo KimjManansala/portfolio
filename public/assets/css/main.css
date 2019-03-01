@@ -1659,6 +1659,12 @@ input, select, textarea {
 	width: 40px;
 
 }
+.skills-items > .video{
+	height: 40px;
+	width: 40px;
+
+}
+
 
 .skills-items > h6{
 	font-size: 12px;
