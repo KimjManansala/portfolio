@@ -21,6 +21,8 @@ function sdHomeSlice(n) {
   x[siHomeSlice - 1].style.display = "block";
 }
 
+
+// FOR BIN ORGANIZER
 var slBinOrganizer = 1;
 sdBinOrganizer(slBinOrganizer);
 
@@ -42,6 +44,33 @@ function sdBinOrganizer(n) {
   }
   x[slBinOrganizer - 1].style.display = "block";
 }
+
+
+// FOR CHECKERS
+
+var checkers = 1;
+sdCheckers(checkers);
+
+function plusDivsGame(n) {
+  sdCheckers((checkers += n));
+}
+
+function sdCheckers(n) {
+  var i;
+  var x = document.getElementsByClassName("checkers-game");
+  if (n > x.length) {
+    checkers = 1;
+  }
+  if (n < 1) {
+    checkers = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[checkers - 1].style.display = "block";
+}
+
+
 
 // var slSimpleGame = 1;
 // sdSimpleGame(slSimpleGame);
@@ -68,18 +97,6 @@ function sdBinOrganizer(n) {
 document.addEventListener("DOMContentLoaded", function(event) {
   welcomeUser()
 });
-
-// document.getElementById("contact-form").addEventListener("submit", e => {
-//   e.preventDefault();
-//   let name = document.getElementById("name").value;
-//   let email = document.getElementById("email").value;
-//   let subject = document.getElementById("subject").value;
-//   let message = document.getElementById("message").value;
-//   console.log(`kimjmanansala@gmail.com?subject=${subject}t&body=${message}`);
-//   window.open(
-//     `mailto:kimjmanansala@gmail.com?subject=${subject}&body=${message}`
-//   );
-// });
 
 function welcomeUser() {
   // This is an easter egg for Developers that want to open the console!
