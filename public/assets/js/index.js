@@ -84,15 +84,15 @@ function slidePickup(n){
   var i;
   var x = document.getElementsByClassName('pickup')
   if (n > x.length) {
-    checkers = 1;
+    pickup = 1;
   }
   if (n < 1) {
-    checkers = x.length;
+    pickup = x.length;
   }
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  x[checkers - 1].style.display = "block";
+  x[pickup - 1].style.display = "block";
 
 }
 document.addEventListener("DOMContentLoaded", function(event) {
