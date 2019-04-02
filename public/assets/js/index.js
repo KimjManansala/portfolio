@@ -71,29 +71,30 @@ function sdCheckers(n) {
 }
 
 
+// FOR PICK UP HOOPS
 
-// var slSimpleGame = 1;
-// sdSimpleGame(slSimpleGame);
+let pickup = 1;
+slidePickup(pickup)
 
-// function plusDivsGame(n) {
-//   sdSimpleGame((slSimpleGame += n));
-// }
+function plusDivPickup(n){
+  slidePickup((pickup += n))
+}
 
-// function sdSimpleGame(n) {
-//   var i;
-//   var x = document.getElementsByClassName("simple-game");
-//   if (n > x.length) {
-//     slSimpleGame = 1;
-//   }
-//   if (n < 1) {
-//     slSimpleGame = x.length;
-//   }
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";
-//   }
-//   x[slSimpleGame - 1].style.display = "block";
-// }
+function slidePickup(n){
+  var i;
+  var x = document.getElementsByClassName('pickup')
+  if (n > x.length) {
+    checkers = 1;
+  }
+  if (n < 1) {
+    checkers = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[checkers - 1].style.display = "block";
 
+}
 document.addEventListener("DOMContentLoaded", function(event) {
   welcomeUser()
 });
